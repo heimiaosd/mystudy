@@ -1,0 +1,26 @@
+/*************************************************************************
+	> File Name: 41.n个数的平均数.c
+	> Author: 
+	> Mail: 
+	> Created Time: Sun 24 Sep 2023 12:52:20 PM CST
+ ************************************************************************/
+
+// 读入n个整数 计算它们的平均值
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    double sum;
+    scanf("%d",&n);
+    for(int i=0; i<n; i++)
+    {
+        int temp;
+        scanf("%d",&temp);
+        sum += temp;
+    }
+    printf("%lf\n",sum/n);
+    return 0;
+}
+
